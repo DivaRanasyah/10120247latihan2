@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <!-- 29-04-2023, NIM:10120247, Diva Putra Ranasyah, IF-6 -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen48dp"
+            android:background="@drawable/ic_header"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:layout_width="@dimen/dimen30dp"
+                android:layout_height="@dimen/dimen30dp"
+                android:layout_marginTop="@dimen/dimen15dp"
+                android:layout_marginStart="@dimen/dimen15dp"
+                android:src="@drawable/ic_header_back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen15dp"
+                android:layout_marginStart="@dimen/dimen25dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="@string/reg"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen385dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen68dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                style="@style/EdtWhiteFour15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen50dp"
+                android:paddingBottom="@dimen/dimen20dp"
+                android:layout_marginTop="@dimen/dimen10dp"
+                android:autofillHints="@color/bg_invite_friends"
+                android:backgroundTint="@color/bg_invite_friends"
+                android:hint="@string/username"
+                android:inputType="textCapCharacters" />
+
+            <EditText
+                style="@style/EdtWhiteFour15"
+                android:layout_marginTop="@dimen/dimen10dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen50dp"
+                android:paddingBottom="@dimen/dimen20dp"
+                android:backgroundTint="@color/bg_invite_friends"
+                android:hint="@string/email"
+                android:inputType="textCapCharacters" />
+
+            <EditText
+                style="@style/EdtWhiteFour15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen50dp"
+                android:paddingBottom="@dimen/dimen20dp"
+                android:layout_marginTop="@dimen/dimen10dp"
+                android:backgroundTint="@color/bg_invite_friends"
+                android:hint="@string/hp"
+                android:inputType="number" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:checkedButton="@+id/radio_button_1"
+                android:layout_marginTop="@dimen/dimen15dp"
+                android:orientation="horizontal"
+                android:layout_width="@dimen/dimen385dp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_marginStart="@dimen/dimen15dp"
+                    android:layout_width="@dimen/dimen200dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/font_desc"
+                    android:text="@string/l"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/font_desc"
+                    android:text="@string/p"
+                    android:textSize="20sp"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/dimen385dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen320dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <LinearLayout
+                    android:layout_width="@dimen/dimen200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/goldar"
+                        android:textColor="@color/font_desc"
+                        android:textSize="20sp"/>
+                    <ImageView
+                        android:layout_width="@dimen/dimen20dp"
+                        android:layout_height="@dimen/dimen20dp"
+                        android:layout_marginStart="@dimen/dimen78dp"
+                        android:src="@drawable/ic_register_dropdown"
+                        android:contentDescription="@string/goldar" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dimen200dp"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:background="@drawable/garis2"
+                     android:layout_height="@dimen/dimen2dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen25dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <LinearLayout
+                    android:layout_width="@dimen/dimen150dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reshus"
+                        android:textColor="@color/font_desc"
+                        android:textSize="20sp"/>
+                    <ImageView
+                        android:layout_width="@dimen/dimen20dp"
+                        android:layout_height="@dimen/dimen20dp"
+                        android:layout_marginStart="@dimen/dimen68dp"
+                        android:contentDescription="@string/reshus"
+                        android:src="@drawable/ic_register_dropdown"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dimen150dp"
+                    android:layout_height="@dimen/dimen1dp"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:background="@drawable/garis2"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/dimen385dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen365dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <EditText
+                style="@style/EdtWhiteFour15"
+                android:layout_marginTop="@dimen/dimen10dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen50dp"
+                android:paddingBottom="@dimen/dimen20dp"
+                android:backgroundTint="@color/bg_invite_friends"
+                android:hint="@string/pass"
+                android:inputType="textPassword" />
+
+            <EditText
+                style="@style/EdtWhiteFour15"
+                android:layout_marginTop="@dimen/dimen10dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen50dp"
+                android:paddingBottom="@dimen/dimen20dp"
+                android:backgroundTint="@color/bg_invite_friends"
+                android:hint="@string/repass"
+                android:inputType="textPassword" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:checkedButton="@+id/radio_button_1"
+                android:layout_marginTop="@dimen/dimen15dp"
+                android:orientation="horizontal"
+                android:layout_width="@dimen/dimen385dp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio_button_1"
+                    android:layout_marginStart="@dimen/dimen15dp"
+                    android:layout_width="@dimen/dimen200dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/font_desc"
+                    android:text="@string/personal"
+                    android:textSize="20sp"/>
+                <RadioButton
+                    android:id="@+id/radio_button_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/font_desc"
+                    android:text="@string/organisasi"
+                    android:textSize="20sp"/>
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/dimen385dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dimen565dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <EditText
+                style="@style/EdtWhiteFour15"
+                android:layout_marginTop="@dimen/dimen15dp"
+                android:paddingBottom="@dimen/dimen20dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen50dp"
+                android:backgroundTint="@color/bg_invite_friends"
+                android:hint="@string/job" />
+
+            <EditText
+                style="@style/EdtWhiteFour15"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/bg_invite_friends"
+                android:hint="@string/almt" />
+
+            <EditText
+                style="@style/EdtWhiteFour15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen50dp"
+                android:paddingBottom="@dimen/dimen20dp"
+                android:layout_marginTop="@dimen/dimen20dp"
+                android:backgroundTint="@color/bg_invite_friends"
+                android:hint="@string/defaultalmt"
+                android:inputType="textPassword"
+                android:drawableEnd="@drawable/ic_blood_needed_location" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:textSize="18sp"
+                android:textColor="@color/font_desc"
+                android:text="@string/setuju"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen20dp"
+                android:background="@drawable/border_buttonreg"
+                tools:context=".MainActivity">
+
+                <Button
+                    android:id="@+id/register"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reg2"
+                    android:textColor="@color/light_blue"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
